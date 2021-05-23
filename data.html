@@ -8,7 +8,7 @@
    <!-- Bring in our bootstrap stylesheet -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-   <link rel="stylesheet" href="styles_landing.css">
+   <link rel="stylesheet" href="styles_comp.css">
 </head>
 
 <body>
@@ -26,10 +26,10 @@
           Plot
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-          <a class="dropdown-item" href="humidity.html">Humidity</a>
-          <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-          <a class="dropdown-item" href="wind.html">Wind Speed</a>
+          <a class="dropdown-item" href="#">Max Temperature</a>
+          <a class="dropdown-item" href="#">Humidity</a>
+          <a class="dropdown-item" href="#">Cloudiness</a>
+          <a class="dropdown-item" href="#">Wind Speed</a>
         </div>
       </li>
 
@@ -44,47 +44,42 @@
     </ul>
   </nav>
 
-  <!--Graphs -->
-  <div class="container">
-  <div class="row">
-    <div class="col-md-7">
-    <div class="box">
-      <h1>Summary: Latitude vs. X </h1>
-      <br>
-      <hr>
-      <br>
-      <img src="Resources\assets\images\Fig1.png" class="img1" alt="latitude vs X">
-      <p style="color: black;">The purpose of this project was to analyse how weather changes as we get closer to equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-      </p>
-
-      <br>
-
-      <p style="color: black;">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-          factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as 
-          part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-      </p>
 
 
-    </div>
-</div>
+<!--DATA -->
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 col-md-6">
+        <div class="box_comp">
+            <h1>Data </h1>
+            <br>
+            <hr>
+            <br>
+        <iframe src="Resources\cities.csv"></iframe>
 
-    <div class="col-md-5">
-        <div class="box1">
-          <h1>Visualizations </h1>
-          <br>
-          <hr>
-          <br>
-          <img src="Resources\assets\images\Fig1.png" class="img2" alt="latitude vs X">
-          <img src="Resources\assets\images\Fig2.png" class="img3" alt="latitude vs X">
-          <img src="Resources\assets\images\Fig3.png" class="img4" alt="latitude vs X">
-          <img src="Resources\assets\images\Fig4.png" class="img5" alt="latitude vs X">
+              
+            <?php
+            $file = fopen("contacts.csv","r");
+            print_r(fgetcsv($file));
+            fclose($file);
+            ?>
+        </div>
         </div>
 
-    
-       </div>
+
+        
+    </div>
   
+        
 </div>
-</div> 
+   
+
+
+
+
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

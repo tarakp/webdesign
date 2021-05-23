@@ -1,0 +1,148 @@
+/* Add your styles here */
+body {
+    background-color:lightgray
+}
+.container{
+    height:1000px;
+    background-color:white;
+    margin-top: 2%;
+    margin-bottom:-95%;
+}
+
+.container1 {
+    visibility: hidden;
+}
+
+h5 {text-align: center;}
+
+
+.box_comp {
+    
+    height: 150px;
+    padding: 20px;
+    color: green;
+    background: white;;
+    margin-top: 0%;
+
+  }
+
+
+
+
+.box_comp2 {
+    
+    height: 400px;
+    padding: 20px;
+    color: green;
+    background: white;
+    
+  }
+
+  .box_comp3 {
+    
+    height: 400px;
+    
+    padding: 20px;
+    color: green;
+    background: white;
+     
+  }
+
+  .box_comp4 {
+    
+    height: 400px;
+    
+    padding: 20px;
+    color: green;
+    background: white;
+     
+  }
+
+  .box_comp5 {
+    
+    height: 400px;
+    
+    padding: 20px;
+    color: green;
+    background: white;
+     
+  }
+  
+  
+
+
+ .margin-top-80 {
+    margin-top: 80px;
+  }
+
+  .img {
+    height: 335px;
+    float:left;
+  }
+
+  .img1 {
+    height: 335px;
+    float:left;
+  }
+  
+  .img2 {
+    height: 335px;
+    float:center;
+  }
+  .img3 {
+    height: 335px;
+    float:center;
+  }
+
+  .img4 {
+    height: 335px;
+    float: left;
+  }
+
+  .img5 {
+    height: 335px;
+    float:right;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .container{
+        height: 2000px;
+        background-color:white;
+        margin-top: 2%;
+                        
+    }
+    .img {
+        height: 250px;
+        align-items: center;
+      }
+  
+  }
+
+  @media screen and (max-width: 1000px) {
+    .container{
+        height: 2000px;
+        background-color:white;
+        margin-top: 2%;
+                        
+    }
+    .img {
+        height: 220px;
+        align-items: center;
+      }
+  
+  }
+
+  @media screen and (max-width: 765px) {
+    .container{
+        height: 2000px;
+        background-color:white;
+        margin-top: 2%;
+                        
+    }
+    .img {
+        height: 335px;
+        align-items: center;
+      }
+  
+      h1{font-size: 225%;}
+  }

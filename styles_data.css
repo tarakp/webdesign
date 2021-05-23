@@ -11,15 +11,13 @@ body {
   }
   
 .container{
-    height:1000px;
+    height:26200px;
     background-color:white;
     margin-top: 2%;
     margin-bottom:-95%;
 }
 
-.container1 {
-    visibility: hidden;
-}
+
 
 h5 {text-align: center;}
 
